@@ -1,0 +1,133 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgb(0, 0, 0); /* Cor de destaque da Nike */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0); /* Cor de destaque da Nike */
+}
+.bn30 {
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #000000, #ff0000);
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(36, 2, 2, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: rgb(0, 0, 0);
+  }
+  
+  .bn30 .text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #7409099d, #000000);
+  }
+  
+  .bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #ffffff;
+  }
+  
+  .bn30:hover {
+    background-image: linear-gradient(-45deg, #dc4545, #831c1c);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  }
+  
+  .bn30:hover .text {
+    background-image: linear-gradient(-45deg, #000000, #750d0d);
+  }
+  
+  .grid-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+  }
+  .container {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .slider-container {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    position: center;
+    text-align: center;
+    align-items: center;
+  }
+  .slider-container .slide {
+    scroll-snap-align: start;
+  }
+  .slider-container img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+  }
+  .item {
+    flex: 0 0 30%; /* Cada item ocupa 30% da largura do contêiner, com flex-grow e flex-shrink desativados */
+    margin: 10px; /* Espaçamento entre os itens */
+    box-sizing: border-box;
+  }
+  .destaque {
+    text-align: center;
+  }
